@@ -15,6 +15,8 @@
 @property (nonatomic, assign) int selected;
 @property (nonatomic, strong) UIColor *selectedColor;
 @property (nonatomic, strong) UIColor *deselectedColor;
+@property (nonatomic, strong) UIColor *selectedTextColor;
+@property (nonatomic, strong) UIColor *deselectedTextColor;
 @property (nonatomic, strong) NSObject<UIRoundedHorizontalBarDelegate> *delegate;
 
 @end
@@ -27,7 +29,8 @@
                                 andCount:(int)count
                                andTitles:(NSArray *)titles
                                  andFont:(UIFont *)font
-                            andTextColor:(UIColor *)textColor
+                    andSelectedTextColor:(UIColor *)selectedTextColor
+                  andDeselectedTextColor:(UIColor *)deselectedTextColor
                         andSelectedColor:(UIColor *)selectedColor
                       andDeselectedColor:(UIColor *)deselectedColor
                        andSeperatorColor:(UIColor *)seperatorColor
@@ -37,7 +40,8 @@
                                                                           andCount:count
                                                                          andTitles:titles
                                                                            andFont:font
-                                                                      andTextColor:textColor
+                                                              andSelectedTextColor:selectedTextColor
+                                                            andDeselectedTextColor:deselectedTextColor
                                                                   andSelectedColor:selectedColor
                                                                 andDeselectedColor:deselectedColor
                                                                  andSeperatorColor:seperatorColor
@@ -49,7 +53,8 @@
                                  andCount:(int)count
                                 andTitles:(NSArray *)titles
                                   andFont:(UIFont *)font
-                             andTextColor:(UIColor *)textColor
+                     andSelectedTextColor:(UIColor *)selectedTextColor
+                   andDeselectedTextColor:(UIColor *)deselectedTextColor
                          andSelectedColor:(UIColor *)selectedColor
                        andDeselectedColor:(UIColor *)deselectedColor
                         andSeperatorColor:(UIColor *)seperatorColor
@@ -61,11 +66,12 @@
         for (int i = 0; i < count; ++i) {
             UIButton *newButton = [UIButton buttonWithType:UIButtonTypeCustom];
             [newButton setFrame: CGRectMake((frame.size.width / count) * i,
-                                         0,
-                                         frame.size.width / count,
-                                         frame.size.height)];
-            [newButton setTitleColor:textColor forState:UIControlStateNormal];
+                                            0,
+                                            frame.size.width / count,
+                                            frame.size.height)];
+            [newButton setTitleColor:(i == 0 ? selectedTextColor : deselectedTextColor) forState:UIControlStateNormal];
             [newButton setTitle:[titles objectAtIndex:i] forState:UIControlStateNormal];
+            newButton.titleLabel.font = font;
             [newButton setBackgroundColor:(i == 0 ? selectedColor : deselectedColor)];
             newButton.enabled = YES;
             newButton.adjustsImageWhenHighlighted = NO;
@@ -88,6 +94,8 @@
         }
         self.deselectedColor = deselectedColor;
         self.selectedColor = selectedColor;
+        self.selectedTextColor = selectedTextColor;
+        self.deselectedTextColor = deselectedTextColor;
         self.count = count;
         [self setClipsToBounds:YES];
         self.selected = 0;
@@ -141,6 +149,7 @@
                 } else {
                     [oldB setBackgroundColor:self.deselectedColor];
                 }
+                [oldB setTitleColor:self.deselectedTextColor forState:UIControlStateNormal];
                 if (i == 0) {
                     [self makeButton:b beEndCapOfTypeLeft:YES withColor:self.selectedColor];
                 } else if (i == (self.count - 1)) {
@@ -148,6 +157,7 @@
                 } else {
                     [b setBackgroundColor:self.selectedColor];
                 }
+                [b setTitleColor:self.selectedTextColor forState:UIControlStateNormal];
                 [self.delegate selectionChangedFrom:self.selected to:i];
                 self.selected = i;
                 return;

@@ -16,7 +16,8 @@
                                 andCount:(int)count
                                andTitles:(NSArray *)titles
                                  andFont:(UIFont *)font
-                            andTextColor:(UIColor *)textColor
+                    andSelectedTextColor:(UIColor *)selectedTextColor
+                  andDeselectedTextColor:(UIColor *)deselectedTextColor
                         andSelectedColor:(UIColor *)selectedColor
                       andDeselectedColor:(UIColor *)deselectedColor
                        andSeperatorColor:(UIColor *)seperatorColor
