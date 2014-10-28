@@ -59,7 +59,7 @@
     if (self) {
         self.buttons = [NSMutableArray arrayWithCapacity:count];
         for (int i = 0; i < count; ++i) {
-            UIButton *newButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+            UIButton *newButton = [UIButton buttonWithType:UIButtonTypeCustom];
             [newButton setFrame: CGRectMake((frame.size.width / count) * i,
                                          0,
                                          frame.size.width / count,
@@ -68,6 +68,7 @@
             [newButton setTitle:[titles objectAtIndex:i] forState:UIControlStateNormal];
             [newButton setBackgroundColor:(i == 0 ? selectedColor : deselectedColor)];
             newButton.enabled = YES;
+            newButton.adjustsImageWhenHighlighted = NO;
             [newButton addTarget:self action:@selector(buttonSelected:) forControlEvents:UIControlEventTouchUpInside];
             [self addSubview:newButton];
             [(NSMutableArray *)self.buttons addObject:newButton];
