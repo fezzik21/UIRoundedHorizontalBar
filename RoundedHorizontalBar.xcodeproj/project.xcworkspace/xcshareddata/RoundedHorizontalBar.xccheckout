@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>EF488DD8-5DDF-4E71-8512-6C9F62E460F9</string>
+	<key>IDESourceControlProjectName</key>
+	<string>RoundedHorizontalBar</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>214D74BF-148F-446C-AB71-36AA2DEAD035</key>
+		<string>ssh://github.com/fezzik21/UIRoundedHorizontalBar.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>RoundedHorizontalBar.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>214D74BF-148F-446C-AB71-36AA2DEAD035</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/fezzik21/UIRoundedHorizontalBar.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>214D74BF-148F-446C-AB71-36AA2DEAD035</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>214D74BF-148F-446C-AB71-36AA2DEAD035</string>
+			<key>IDESourceControlWCCName</key>
+			<string>UIRoundedHorizontalBar</string>
+		</dict>
+	</array>
+</dict>
+</plist>
