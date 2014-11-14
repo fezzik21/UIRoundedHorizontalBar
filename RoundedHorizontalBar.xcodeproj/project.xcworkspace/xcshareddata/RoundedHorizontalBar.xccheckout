@@ -10,29 +10,29 @@
 	<string>RoundedHorizontalBar</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>214D74BF-148F-446C-AB71-36AA2DEAD035</key>
-		<string>ssh://github.com/fezzik21/UIRoundedHorizontalBar.git</string>
+		<key>5E5B3E94221FDBEF245622D25004CA7E1A39B413</key>
+		<string>github.com:fezzik21/UIRoundedHorizontalBar.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>RoundedHorizontalBar.xcodeproj/project.xcworkspace</string>
+	<string>RoundedHorizontalBar.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>214D74BF-148F-446C-AB71-36AA2DEAD035</key>
+		<key>5E5B3E94221FDBEF245622D25004CA7E1A39B413</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://github.com/fezzik21/UIRoundedHorizontalBar.git</string>
+	<string>github.com:fezzik21/UIRoundedHorizontalBar.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>214D74BF-148F-446C-AB71-36AA2DEAD035</string>
+	<string>5E5B3E94221FDBEF245622D25004CA7E1A39B413</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>214D74BF-148F-446C-AB71-36AA2DEAD035</string>
+			<string>5E5B3E94221FDBEF245622D25004CA7E1A39B413</string>
 			<key>IDESourceControlWCCName</key>
 			<string>UIRoundedHorizontalBar</string>
 		</dict>
